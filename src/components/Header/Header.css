@@ -27,3 +27,28 @@ button {
 .navbar {
     flex: 10;
 }
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0;
+    }
+
+    header img {
+        margin-top: 30px;
+    }
+
+    header .navbar .flex {
+        display: none;
+    }
+
+    header .small {
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        background-color: #27ae60;
+        padding: 20px;
+    }
+
+
+}
