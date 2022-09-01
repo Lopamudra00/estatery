@@ -42,3 +42,7 @@ button {
   font-weight: bold;
 
 }
+
+button i {
+  margin-right: 5px;
+}
