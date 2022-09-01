@@ -5,7 +5,7 @@ import { nav } from "../Data";
 import './Header.css';
 
 const Header = () => {
-    const [navList] = useState(false)
+    const [navList, setNavList] = useState(false)
     return (
         <header>
             <div className="navbar">
@@ -28,8 +28,8 @@ const Header = () => {
                         Sign In
                     </button>
 
-                    <div>
-
+                    <div className='toggle'>
+                        <button onClick={() => setNavList(!navList)}>{navList ? <i className='fa fa-times'></i> : <i className='fa fa-bars'></i>}</button>
                     </div>
                 </div>
             </div>
