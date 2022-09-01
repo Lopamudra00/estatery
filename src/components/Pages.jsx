@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom"
 import { Switch } from "react-router-dom"
 import React from "react"
 import Header from "./Header/Header"
-import Home from "./Home"
+import Home from "./Home/Home"
 import About from "./About/About";
 import Services from "./Service/Services";
 import Pricing from "./Price/Price";
