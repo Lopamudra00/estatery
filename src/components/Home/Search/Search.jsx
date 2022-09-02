@@ -1,30 +1,33 @@
 import React from "react";
 import Heading from "../Heading/Heading";
-const Search = () => {
+import './Search.css'
+const Search = ({ setLocation, setProperty, setPrice }) => {
     return (
 
         <div className='search'>
             <div className='container'>
-                <Heading title='Search Your Next Home ' subtitle='Find new & featured property located in your local city.' />
+                <div >
+                    <Heading title='Find Your Comfort Zone ' subtitle='Find new & featured property located in your local city.' />
+                </div>
 
                 <form className='flex'>
                     <div className='box'>
                         <span>City/Street</span>
-                        <input type='text' placeholder='Location' />
+                        <input onChange={(a) => { setLocation(a.target.value) }} type='text' placeholder='Location' />
                     </div>
                     <div className='box'>
                         <span>Property Type</span>
-                        <input type='text' placeholder='Property Type' />
+                        <input onChange={(a) => { setProperty(a.target.value) }} type='text' placeholder='Property Type' />
                     </div>
                     <div className='box'>
                         <span>Price Range</span>
-                        <input type='text' placeholder='Price Range' />
+                        <input onChange={(a) => { setPrice(a.target.value) }} type='text' placeholder='Price Range' />
                     </div>
                     <div className='box'>
                         <h4>Advance Filter</h4>
                     </div>
                     <button className='btn1'>
-                        <i className='fa fa-search'></i>
+                        <i className='fa fa-search'>Go</i>
                     </button>
                 </form>
             </div>

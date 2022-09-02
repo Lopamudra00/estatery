@@ -1,7 +1,12 @@
 import './App.css'
-import Pages from './components/Pages'
+import Home from './components/Home/Home'
 function App() {
-  return <Pages />
+  return (
+    <div className='Page w-[100%] h-[100vh] bg-black '>
+      <Home />
+    </div>
+  )
+
 }
 
 export default App

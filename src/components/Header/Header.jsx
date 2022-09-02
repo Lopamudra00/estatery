@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { nav } from "../Data";
 import './Header.css';
 
@@ -17,8 +16,8 @@ const Header = () => {
                     <div className="nav">
                         <ul className={navList ? "small" : "flex"}  >
                             {nav.map((list, index) => (
-                                <li key={index}>
-                                    <Link to={list.path}> {list.text} </Link>
+                                <li className="nav-link" key={index}>
+                                    <a href={list.path}> {list.text} </a>
                                 </li>
                             ))}
                         </ul>

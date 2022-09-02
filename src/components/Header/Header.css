@@ -1,8 +1,6 @@
 header {
     background-color: #fff;
-    height: 10vh;
     box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
-    padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 9999;
@@ -11,7 +9,7 @@ header {
 }
 
 header img {
-    width: 170px;
+    width: 70px;
 }
 
 header a {
@@ -60,4 +58,9 @@ header .toggle {
     }
 
 
+}
+
+.nav-link a {
+    color: #333333 !important;
+    font-weight: 600;
 }
