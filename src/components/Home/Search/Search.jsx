@@ -21,7 +21,8 @@ const Search = ({ setLocation, setProperty, setPrice }) => {
                     </div>
                     <div className='box'>
                         <span>Price Range</span>
-                        <input onChange={(a) => { setPrice(a.target.value) }} type='text' placeholder='Price Range' />
+                        <input onChange={(a) => { setPrice(prev => ({ ...prev, low: a.target.value })) }} type='text' placeholder='Price Range' />
+                        <input onChange={(a) => { setPrice(prev => ({ ...prev, high: a.target.value })) }} type='text' placeholder='Price Range' />
                     </div>
                     <div className='box'>
                         <h4>Advance Filter</h4>

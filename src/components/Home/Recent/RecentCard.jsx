@@ -9,7 +9,8 @@ const RecentCard = (props) => {
                     const { cover, category, location, name, price, type } = val
                     return (
                         (props.location == location || props.location == "") &&
-                            (props.property == type || props.property == "") ? (
+                            (props.property == type || props.property == "") &&
+                            ((props.price.low == "" || props.price.high == "") || (price >= parseInt(props.price.low) && price <= parseInt(props.price.high))) ? (
                             <div className='box shadow' key={index}>
                                 <div className='img'>
                                     <img src={cover} alt='' />
