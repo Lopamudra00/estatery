@@ -1,0 +1,66 @@
+header {
+    background-color: #fff;
+    box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    width: 70px;
+}
+
+header a {
+    margin-left: 30px;
+    transition: 0.5s;
+    font-weight: 500;
+}
+
+button {
+    display: flex;
+}
+
+.navbar {
+    flex: 10;
+}
+
+header .toggle {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0;
+    }
+
+    header img {
+        margin-top: 30px;
+    }
+
+    header .navbar .flex {
+        display: none;
+    }
+
+    header .small {
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        background-color: #27ae60;
+        padding: 20px;
+    }
+
+    header .toggle {
+        display: block;
+        margin-top: 20px;
+    }
+
+
+}
+
+.nav-link a {
+    color: #333333 !important;
+    font-weight: 600;
+}
